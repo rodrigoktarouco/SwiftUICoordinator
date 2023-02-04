@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct LemonView: View {
+
+    @EnvironmentObject private var sheetCoordinator: SheetCoordinator
+
+    
     var body: some View {
         List {
             Button("Dismiss") {
-                
+                sheetCoordinator.dismiss()
             }
         }
         .navigationTitle("🍋")

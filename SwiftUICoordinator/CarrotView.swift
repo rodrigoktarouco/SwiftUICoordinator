@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct CarrotView: View {
+
+    @EnvironmentObject private var coordinator: BaseCoordinator
+    @EnvironmentObject private var sheetCoordinator: SheetCoordinator
+    @EnvironmentObject private var fullScreenCoverCoordiantor: FullScreenCoordinator
+    
     var body: some View {
         List {
             Button("Pop") {
-                
+                coordinator.pop()
             }
             Button("Pop to root") {
-                
+                coordinator.popToRoot()
             }
         }
         .navigationTitle("🥕")

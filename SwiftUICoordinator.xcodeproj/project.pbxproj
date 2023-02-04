@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C33372B3298F06180063F9F2 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33372B2298F06180063F9F2 /* BaseCoordinator.swift */; };
+		C33372BA298F08DA0063F9F2 /* CoordinatorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33372B9298F08DA0063F9F2 /* CoordinatorProtocols.swift */; };
+		C33372BC298F0A660063F9F2 /* SheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33372BB298F0A660063F9F2 /* SheetCoordinator.swift */; };
+		C33372BE298F0AC50063F9F2 /* FullScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33372BD298F0AC50063F9F2 /* FullScreenCoordinator.swift */; };
+		C33372C0298F0F170063F9F2 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33372BF298F0F170063F9F2 /* CoordinatorView.swift */; };
+		C33372C3298F12FA0063F9F2 /* CoordinatorEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33372C2298F12FA0063F9F2 /* CoordinatorEnums.swift */; };
 		C95A2180298676D700FAEFBF /* SwiftUICoordinatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A217F298676D700FAEFBF /* SwiftUICoordinatorApp.swift */; };
 		C95A2184298676D800FAEFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95A2183298676D800FAEFBF /* Assets.xcassets */; };
 		C95A2187298676D800FAEFBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95A2186298676D800FAEFBF /* Preview Assets.xcassets */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C33372B2298F06180063F9F2 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		C33372B9298F08DA0063F9F2 /* CoordinatorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocols.swift; sourceTree = "<group>"; };
+		C33372BB298F0A660063F9F2 /* SheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetCoordinator.swift; sourceTree = "<group>"; };
+		C33372BD298F0AC50063F9F2 /* FullScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoordinator.swift; sourceTree = "<group>"; };
+		C33372BF298F0F170063F9F2 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		C33372C2298F12FA0063F9F2 /* CoordinatorEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorEnums.swift; sourceTree = "<group>"; };
 		C95A217C298676D700FAEFBF /* SwiftUICoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95A217F298676D700FAEFBF /* SwiftUICoordinatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICoordinatorApp.swift; sourceTree = "<group>"; };
 		C95A2183298676D800FAEFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C33372B4298F08680063F9F2 /* CoordinatorExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				C33372B9298F08DA0063F9F2 /* CoordinatorProtocols.swift */,
+			);
+			path = CoordinatorExtensions;
+			sourceTree = "<group>";
+		};
 		C95A2173298676D700FAEFBF = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +79,12 @@
 		C95A217E298676D700FAEFBF /* SwiftUICoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				C33372B4298F08680063F9F2 /* CoordinatorExtensions */,
+				C33372BB298F0A660063F9F2 /* SheetCoordinator.swift */,
+				C33372B2298F06180063F9F2 /* BaseCoordinator.swift */,
+				C33372BD298F0AC50063F9F2 /* FullScreenCoordinator.swift */,
 				C95A217F298676D700FAEFBF /* SwiftUICoordinatorApp.swift */,
+				C33372BF298F0F170063F9F2 /* CoordinatorView.swift */,
 				C95A218D2986771700FAEFBF /* AppleView.swift */,
 				C95A218F2986772800FAEFBF /* BananaView.swift */,
 				C95A21912986773500FAEFBF /* CarrotView.swift */,
@@ -67,6 +92,7 @@
 				C95A21952986775C00FAEFBF /* OliveView.swift */,
 				C95A2183298676D800FAEFBF /* Assets.xcassets */,
 				C95A2185298676D800FAEFBF /* Preview Content */,
+				C33372C2298F12FA0063F9F2 /* CoordinatorEnums.swift */,
 			);
 			path = SwiftUICoordinator;
 			sourceTree = "<group>";
@@ -150,9 +176,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C95A218E2986771700FAEFBF /* AppleView.swift in Sources */,
+				C33372BE298F0AC50063F9F2 /* FullScreenCoordinator.swift in Sources */,
 				C95A2180298676D700FAEFBF /* SwiftUICoordinatorApp.swift in Sources */,
 				C95A21922986773500FAEFBF /* CarrotView.swift in Sources */,
+				C33372BA298F08DA0063F9F2 /* CoordinatorProtocols.swift in Sources */,
+				C33372C3298F12FA0063F9F2 /* CoordinatorEnums.swift in Sources */,
 				C95A21942986774E00FAEFBF /* LemonView.swift in Sources */,
+				C33372B3298F06180063F9F2 /* BaseCoordinator.swift in Sources */,
+				C33372C0298F0F170063F9F2 /* CoordinatorView.swift in Sources */,
+				C33372BC298F0A660063F9F2 /* SheetCoordinator.swift in Sources */,
 				C95A21902986772800FAEFBF /* BananaView.swift in Sources */,
 				C95A21962986775C00FAEFBF /* OliveView.swift in Sources */,
 			);
@@ -283,7 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICoordinator/Preview Content\"";
-				DEVELOPMENT_TEAM = R252PR8AVU;
+				DEVELOPMENT_TEAM = CQQC8DT4FG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -312,7 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICoordinator/Preview Content\"";
-				DEVELOPMENT_TEAM = R252PR8AVU;
+				DEVELOPMENT_TEAM = CQQC8DT4FG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

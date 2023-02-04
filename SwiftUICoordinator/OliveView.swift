@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct OliveView: View {
+    
+    @EnvironmentObject private var fullScreenCoverCoordiantor: FullScreenCoordinator
+
     var body: some View {
         List {
             Button("Dismiss") {
-                
+                fullScreenCoverCoordiantor.dismiss()
             }
         }
         .navigationTitle("🫒")
